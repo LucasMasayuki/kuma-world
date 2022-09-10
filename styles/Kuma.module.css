@@ -1,0 +1,389 @@
+
+.bear__nose {
+  width: 80px;
+  background: white;
+  height: 100px;
+  margin: auto;
+  -webkit-transform:translateY(80px);
+      -ms-transform:translateY(80px);
+          transform:translateY(80px);
+  -webkit-border-radius: 50% / 60% 60% 30% 30%;
+          border-radius: 50% / 60% 60% 30% 30%;
+  position: relative;
+  -webkit-animation:moveNose 3s infinite;
+          animation:moveNose 3s infinite;
+  -webkit-transition:.4s ease;
+  -o-transition:.4s ease;
+  transition:.4s ease;
+}
+
+.bear__nose__inner {
+  width: 50px;
+  height: 26px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-50%);
+          transform:translate(-50%,-50%);
+  -webkit-border-radius:50% / 40% 40% 60% 60%;
+          border-radius:50% / 40% 40% 60% 60%;
+  -webkit-animation:flip .5s infinite alternate;
+          animation:flip .5s infinite alternate;
+}
+
+.bear__nose--inner::after {
+  content:"";
+  width: 20px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  bottom: -6px;
+  left:50%;
+  -webkit-border-radius:50px;
+          border-radius:50px;
+  -webkit-transform:translate(-50%);
+      -ms-transform:translate(-50%);
+          transform:translate(-50%);
+  -webkit-box-shadow:
+      20px 5px 0 black,
+      -20px 5px 0 black;
+          box-shadow:
+      20px 5px 0 black,
+      -20px 5px 0 black;
+}
+.bear__body {
+  width: 100%;
+  height: 230px;
+  background: #000;
+  -webkit-border-radius: 50% / 40% 40% 60% 60%;
+          border-radius: 50% / 40% 40% 60% 60%;
+}
+
+.bear{
+width: 240px;
+-webkit-animation:updown 2s infinite alternate;
+        animation:updown 2s infinite alternate;
+}
+
+@-webkit-keyframes updown{
+  to{
+  -webkit-transform:translateY(40px);
+          transform:translateY(40px);
+  }
+}
+
+@keyframes updown{
+  to{
+  -webkit-transform:translateY(40px);
+          transform:translateY(40px);
+  }
+}
+@-webkit-keyframes blink{
+  from{
+  height: 0;
+  }
+  to{
+  height: 15px;
+  }
+}
+@keyframes blink{
+  from{
+  height: 0;
+  }
+  to{
+  height: 15px;
+  }
+}
+
+@-webkit-keyframes moveNose{
+  0%,100%,90%{
+  -webkit-transform:translateY(80px);
+          transform:translateY(80px);
+  }
+  20%,30%{
+  -webkit-transform:translate(20px,60px);
+          transform:translate(20px,60px);
+  }
+  60%,70%{
+  -webkit-transform:translate(-20px,60px);
+          transform:translate(-20px,60px);
+  }
+}
+
+@keyframes moveNose{
+  0%,100%,90%{
+  -webkit-transform:translateY(80px);
+          transform:translateY(80px);
+  }
+  20%,30%{
+  -webkit-transform:translate(20px,60px);
+          transform:translate(20px,60px);
+  }
+  60%,70%{
+  -webkit-transform:translate(-20px,60px);
+          transform:translate(-20px,60px);
+  }
+}
+.bear__ears{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-animation:updown 2s infinite alternate;
+          animation:updown 2s infinite alternate;
+  -webkit-transform:translateY(10px);
+      -ms-transform:translateY(10px);
+          transform:translateY(10px);
+}
+
+.ear{
+  width: 50px;
+  height: 60px;
+  background: black;
+}
+
+.bear__ears__left {
+  -webkit-border-radius:50% 100%;
+            border-radius:50% 100%;
+}
+
+.bear__ears__right {
+  -webkit-border-radius:100% 50%;
+          border-radius:100% 50%;
+}
+
+@-webkit-keyframes updown{
+  to{
+    -webkit-transform:translateY(40px);
+            transform:translateY(40px);
+  }
+}
+
+@keyframes updown{
+  to{
+    -webkit-transform:translateY(40px);
+            transform:translateY(40px);
+  }
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bear{
+width: 240px;
+-webkit-animation:updown 2s infinite alternate;
+        animation:updown 2s infinite alternate;
+}
+
+.shadow{
+  width: 200px;
+  height: 30px;
+  margin: auto;
+  margin-top: -20px;
+  background: #000;
+  opacity:.6;
+  display: block;
+  -webkit-border-radius:100%;
+          border-radius:100%;
+  -webkit-transform:translateY(60px);
+      -ms-transform:translateY(60px);
+          transform:translateY(60px);
+  -webkit-filter:blur(17px);
+          filter:blur(17px);
+  -webkit-animation:shadow 2s infinite alternate;
+          animation:shadow 2s infinite alternate;
+}
+
+@-webkit-keyframes shadow {
+  from{
+    width: 200px;
+  }
+  to{
+    width: 150px;
+  }
+}
+@keyframes shadow{
+  from{
+    width: 200px;
+  }
+  to{
+    width: 150px;
+  }
+}
+
+.ballon {
+  position: absolute;
+  transform-origin: 0% 100%;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  width: 120px;
+  padding: 10px;
+  left: 110px;
+  top: -25px;
+  transform: scale(0);
+  animation-fill-mode: forwards;
+  animation-name: shrink;
+  animation-duration: 0.1s;
+  z-index: 99999;
+}
+
+.visible {
+  animation-name: expand-bounce;
+  animation-duration: 0.25s;
+}
+.ballon::before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  bottom: -25px;
+  left: 5px;
+  border-style: solid;
+  border-width: 15px;
+  border-color: white transparent transparent white;
+  transform: rotate(10deg);
+}
+
+/* Here the scale changes from 0 to 1. To add the bounciness
+effect, the scale is set to 1.25 midway through the animation
+to give the animation a nicer effect. */
+@keyframes expand-bounce {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Here the scale simply goes from 1 back to 0 */
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);  
+  }
+}
+
+#typedtext:after{
+  content: "|";
+  animation: blink 500ms linear infinite alternate;
+}
+@-webkit-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+  }
+
+@-moz-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.ripple {
+  background-position: center;
+  transition: background 1.2s;
+  border-radius: 125px;
+}
+.ripple:active {
+  background-color: lightgray;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+
+.bear__eyes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  position: relative;
+  -webkit-transform:translateY(60px);
+      -ms-transform:translateY(60px);
+          transform:translateY(60px);
+  -webkit-transition:all .3s linear;
+  -o-transition:all .3s linear;
+  transition:all .3s linear;
+}
+
+.eye {
+  width: 20px;
+  background: #fff;
+  height: 15px;
+  position: absolute;
+  -webkit-border-radius:50% / 40% 40% 60% 60%;
+          border-radius:50% / 40% 40% 60% 60%;
+  -webkit-animation:blink .5s infinite alternate;
+          animation:blink .5s infinite alternate;
+  -webkit-transition:all .3s ease;
+  -o-transition:all .3s ease;
+  transition:all .3s ease;
+}
+
+.bear__eyes__left {
+  left: 50px;
+    -webkit-transform:skewY(5deg);
+        -ms-transform:skewY(5deg);
+            transform:skewY(5deg);
+}
+
+.bear__eyes__right {
+  right: 50px;
+    -webkit-transform:skewY(-5deg);
+        -ms-transform:skewY(-5deg);
+            transform:skewY(-5deg);
+}
+
+@-webkit-keyframes blink{
+from{
+  height: 0;
+}
+to{
+  height: 15px;
+}
+}
+@keyframes blink{
+from{
+  height: 0;
+}
+to{
+  height: 15px;
+}
+}

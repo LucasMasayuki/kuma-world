@@ -1,0 +1,64 @@
+.container {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+}
+
+.ballon {
+  position: absolute;
+  transform-origin: 0% 100%;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  left: 3%;
+  bottom: 3%;
+  transform: scale(0);
+  animation-fill-mode: forwards;
+  animation-name: shrink;
+  animation-duration: 0.1s;
+}
+
+.visible {
+  animation-name: expand-bounce;
+  animation-duration: 0.25s;
+}
+.ballon::before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  bottom: -25px;
+  left: 5px;
+  border-style: solid;
+  border-width: 15px;
+  border-color: white transparent transparent white;
+  transform: rotate(10deg);
+}
+
+
+/* Here the scale changes from 0 to 1. To add the bounciness
+effect, the scale is set to 1.25 midway through the animation
+to give the animation a nicer effect. */
+@keyframes expand-bounce {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Here the scale simply goes from 1 back to 0 */
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);  
+  }
+}

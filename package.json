@@ -1,0 +1,42 @@
+{
+  "name": "kumaworld-mint",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/lab": "^5.0.0-alpha.90",
+    "@mui/material": "^5.9.0",
+    "@reduxjs/toolkit": "^1.8.3",
+    "bignumber.js": "^9.0.2",
+    "ethers": "^5.6.9",
+    "next": "12.2.2",
+    "next-optimized-images": "^2.6.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "react-redux": "^8.0.2",
+    "react-typewriter-effect": "^1.1.0",
+    "redux-thunk": "^2.4.1",
+    "typewriter-effect": "^2.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.0.4",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.2",
+    "typescript": "4.7.4"
+  }
+}

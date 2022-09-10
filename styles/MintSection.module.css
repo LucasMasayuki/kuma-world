@@ -1,0 +1,41 @@
+.mintSection {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.mintButton {
+  font-weight: bold;
+  border-radius: 100px;
+  font-weight: bold;
+  background-color: tomato;
+}
+
+.mintButton:hover {
+  background-color: #af321c;
+}
+
+.actionIcon {
+  background: white;
+  font-weight: bold;
+}
+.actionIcon:hover {
+  background: lightgray;
+}
+
+.input {
+  border-radius: 30px;
+  background: white;
+  font-weight: bold;
+}
+.input input {
+  font-weight: bold;
+  text-align: center;
+}
+
+.input fieldset {
+  border: none
+}
+
+.qtyMint {
+  margin-bottom: 20px;
+}

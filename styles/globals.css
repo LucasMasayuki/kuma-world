@@ -1,0 +1,17 @@
+html,
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: Permanent Marker;
+  background: linear-gradient(-45deg, #a1c4fd, #c2e9fb);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
