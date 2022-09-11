@@ -4,7 +4,7 @@ The idea of the project is for each nft to be interactive within the nfts market
 
 see in https://kuma-world.vercel.app/
 
-contract:
+contract: https://etherscan.io/address/0x1569f5D2114dafbD35D7C756f58510703B04d35d
 
 ## Getting Started
 
