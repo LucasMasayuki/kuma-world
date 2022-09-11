@@ -2,6 +2,10 @@ This is a NextJS project in WEB3
 
 The idea of the project is for each nft to be interactive within the nfts marketplaces, where users can interact with nft on the nft details page
 
+see in https://kuma-world.vercel.app/
+
+contract:
+
 ## Getting Started
 
 First, run the development server:
